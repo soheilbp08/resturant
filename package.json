@@ -1,0 +1,16 @@
+{
+  "name": "resturarnt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "do.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev:style": "npx @tailwindcss/cli -i ./tailwind-styles.css -o ./style.css --watch"
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.3.3",
+    "tailwindcss": "^4.3.3"
+  }
+}
