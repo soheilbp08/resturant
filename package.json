@@ -5,7 +5,7 @@
   "main": "do.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev:style": "npx @tailwindcss/cli -i ./tailwind-styles.css -o ./style.css --watch"
+    "dev:style": "npx @tailwindcss/cli -i ./styles/tailwind-styles.css -o ./styles/style.css --watch"
   },
   "keywords": [],
   "type": "commonjs",

@@ -3,15 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="./style.css" rel="stylesheet" />
-    <link rel="icon" href="./photo/favicon.ico" />
+    <link href="./styles/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles/tailwind-styles.css" />
+    <link rel="icon" href="./assets/photo/apple-touch-icon.png" />
     <title>دولوپی</title>
   </head>
   <body class="overflow-x-hidden bg-zinc-950">
     <!-- متن ورود و غکس و لایه روی عکس -->
     <section class="relative h-screen">
       <img
-        src="./photo/d671b6b7-9aad-496c-94c5-b871fe00117b.png"
+        src="./assets/photo/d671b6b7-9aad-496c-94c5-b871fe00117b.png"
         class="absolute inset-0 h-full w-full object-cover"
       />
       <div class="absolute inset-0 bg-black/55"></div>
@@ -25,47 +26,70 @@
     </section>
     <!-- نو بار -->
     <nav
-      class="fixed top-0 right-0 left-0 mx-auto mt-12 flex max-w-6xl items-center justify-between rounded-3xl bg-yellow-500 px-6 py-4 shadow-lg"
+      class="sticky mx-auto mt-11 flex max-w-6xl items-center justify-between rounded-3xl bg-yellow-500 px-6 py-4 shadow-lg"
     >
       <img
-        src="./photo/apple-touch-icon.png"
+        src="./assets/photo/apple-touch-icon.png"
         class="h-12 w-12 rounded-2xl object-center"
       />
       <ul class="flex gap-4">
         <li class="flex items-center gap-1">
           <p>contact</p>
-          <img src="./phone.svg" alt="" />
+          <img src="./assets/icons/phone.svg" alt="" />
         </li>
 
         <li class="flex gap-1">
           <p>Menu</p>
-          <img src="./square-menu.svg" alt="" />
+          <img src="./assets/icons/square-menu.svg" alt="" />
         </li>
 
         <li class="flex gap-1">
           <p>Location</p>
-          <img src="./map-pin.svg" alt="" />
+          <img src="./assets/icons/map-pin.svg" alt="" />
         </li>
 
         <li class="flex gap-1">
           <p>Home</p>
-          <img src="./house.svg" alt="" />
+          <img src="./assets/icons/house.svg" alt="" />
         </li>
       </ul>
     </nav>
 
     <!-- غذا -->
-    <div class="menu-container p-5">
+    <div class="menu-container p-5 flex flex-col gap-5">
       <div
         class="pizza-container border-4 border-yellow-600 w-[100%] flex items-center justify-between rounded p-5"
       >
         <div class="flex items-center justify-between gap-5">
-          <img src="./photo/piz1.jpg" alt="" class="w-[100px] rounded" />
+          <img
+            src="./assets/photo/pizza/piz1.jpg"
+            alt=""
+            class="w-[100px] rounded"
+          />
           <h3 class="text-white ml-80 mb-10 underline text-2xl">منوی پیتزا</h3>
         </div>
 
         <a
           href="./pizza.html"
+          class="m-3 rounded px-3 py-2 hover:bg-yellow-600 transition transition-300 text-black bg-yellow-500"
+          >مشاهده</a
+        >
+      </div>
+
+      <div
+        class="berger-container border-4 border-yellow-600 w-[100%] flex items-center justify-between rounded p-5"
+      >
+        <div class="flex items-center justify-between gap-5">
+          <img
+            src="./assets/photo/berger/bur2.jpg"
+            alt=""
+            class="w-[100px] h-[100px] rounded"
+          />
+          <h3 class="text-white ml-80 mb-10 underline text-2xl">منوی برگر</h3>
+        </div>
+
+        <a
+          href="./berger.html"
           class="m-3 rounded px-3 py-2 hover:bg-yellow-600 transition transition-300 text-black bg-yellow-500"
           >مشاهده</a
         >
