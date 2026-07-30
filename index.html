@@ -1,124 +1,105 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./style.css" rel="stylesheet">
-    <link rel="icon" href="./photo/favicon.ico">
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./styles/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles/tailwind-styles.css" />
+    <link rel="icon" href="./assets/photo/apple-touch-icon.png" />
     <title>دولوپی</title>
-</head>
-<body class=" overflow-x-hidden">
+  </head>
+  <body class="overflow-x-hidden bg-zinc-950">
     <!-- متن ورود و غکس و لایه روی عکس -->
-<section class="relative h-screen">
-    <img src="./photo/d671b6b7-9aad-496c-94c5-b871fe00117b.png" class="absolute inset-0 h-full w-full object-cover">
-    <div class="absolute inset-0 bg-black/55"></div>
-    <div class="relative z-10 flex h-full items-center justify-center px-4">
-        <h1 class="max-w-3xl text-center text-3xl font-bold text-white sm:text-4xl md:text-5xl lg:text-6xl">
-            به رستوران دولوپی خوش آمدید
+    <section class="relative h-screen">
+      <img
+        src="./assets/photo/d671b6b7-9aad-496c-94c5-b871fe00117b.png"
+        class="absolute inset-0 h-full w-full object-cover"
+      />
+      <div class="absolute inset-0 bg-black/55"></div>
+      <div class="relative z-10 flex h-full items-center justify-center px-4">
+        <h1
+          class="max-w-3xl text-center text-3xl font-bold text-white sm:text-4xl md:text-5xl lg:text-6xl"
+        >
+          به رستوران دولوپی خوش آمدید
         </h1>
-    </div>
-</section>
-<!-- نو بار -->
-        <nav class="mx-auto mt-12 flex max-w-6xl items-center justify-between rounded-3xl bg-amber-50 px-6 py-4 shadow-lg">
-        <img src="./photo/apple-touch-icon.png" class="h-12 w-12 rounded-2xl object-center">
-        <div class="flex gap-8">
-            <!-- <a href="#" class=" border-3 rounded-xl p-2  hover:hover:bg-[#004225] hover:text-amber-50   ">خانه</a> -->
-            <a href="#" class=" border-3 rounded-xl p-2  hover:hover:bg-[#004225] hover:text-amber-50   ">تماس</a>
-            <a href="#" class=" border-3 rounded-xl p-2  hover:hover:bg-[#004225] hover:text-amber-50   ">درباره ما</a>
-            <a href="#menu" class=" border-3 rounded-xl p-2  hover:hover:bg-[#004225] hover:text-amber-50   ">منو</a>
-        </div>
+      </div>
+    </section>
+    <!-- نو بار -->
+    <nav
+      class="sticky mx-auto mt-11 flex max-w-6xl items-center justify-between rounded-3xl bg-yellow-500 px-6 py-4 shadow-lg"
+    >
+      <img
+        src="./assets/photo/apple-touch-icon.png"
+        class="h-12 w-12 rounded-2xl object-center"
+      />
+      <ul class="flex gap-4">
+        <li class="flex items-center gap-1">
+          <p>contact</p>
+          <img src="./assets/icons/phone.svg" alt="" />
+        </li>
+
+        <li class="flex gap-1">
+          <p>Menu</p>
+          <img src="./assets/icons/square-menu.svg" alt="" />
+        </li>
+
+        <li class="flex gap-1">
+          <p>Location</p>
+          <img src="./assets/icons/map-pin.svg" alt="" />
+        </li>
+
+        <li class="flex gap-1">
+          <p>Home</p>
+          <img src="./assets/icons/house.svg" alt="" />
+        </li>
+      </ul>
     </nav>
-</section>
-<!-- غذا -->
- <section>
-<div id="menu" class="mx-auto mt-10 max-w-5xl space-y-6" dir="rtl">
-    <div class="flex items-center gap-6 rounded-xl bg-amber-50 p-4 shadow">
-        <img src="./photo/piz1.jpg" class="h-32 w-32 rounded-xl object-cover">
-        <div>
-            <h2 class="text-2xl font-bold">پیتزا مخصوص</h2>
-            <p class="mt-2 text-gray-600">
-                تهیه شده با پنیر موزارلا، گوشت تازه و سبزیجات.
-            </p>
-            <span class="mt-2 block font-bold text-green-700">۳۸۰,۰۰۰ تومان</span>
+
+    <!-- غذا -->
+    <div class="menu-container p-5 flex flex-col gap-5">
+      <div
+        class="pizza-container border-4 border-yellow-600 w-[100%] flex items-center justify-between rounded p-5"
+      >
+        <div class="flex items-center justify-between gap-5">
+          <img
+            src="./assets/photo/pizza/piz1.jpg"
+            alt=""
+            class="w-[100px] rounded"
+          />
+          <h3 class="text-white ml-80 mb-10 underline text-2xl">منوی پیتزا</h3>
         </div>
+
+        <a
+          href="./pizza.html"
+          class="m-3 rounded px-3 py-2 hover:bg-yellow-600 transition transition-300 text-black bg-yellow-500"
+          >مشاهده</a
+        >
+      </div>
+
+      <div
+        class="berger-container border-4 border-yellow-600 w-[100%] flex items-center justify-between rounded p-5"
+      >
+        <div class="flex items-center justify-between gap-5">
+          <img
+            src="./assets/photo/berger/bur2.jpg"
+            alt=""
+            class="w-[100px] h-[100px] rounded"
+          />
+          <h3 class="text-white ml-80 mb-10 underline text-2xl">منوی برگر</h3>
+        </div>
+
+        <a
+          href="./berger.html"
+          class="m-3 rounded px-3 py-2 hover:bg-yellow-600 transition transition-300 text-black bg-yellow-500"
+          >مشاهده</a
+        >
+      </div>
     </div>
-    <div class="flex items-center gap-6 rounded-xl bg-amber-50 p-4 shadow">
-        <img src="./photo/piz2.jpg" class="h-32 w-32 rounded-xl object-cover">
-        <div>
-            <h2 class="text-2xl font-bold">پیتزا ویژه</h2>
-            <p class="mt-2 text-gray-600">
-               پیتزای خار مادر
-            </p>
-            <span class="mt-2 block font-bold text-green-700">۲۹۰,۰۰۰ تومان</span>
-        </div>
-    </div>
-    <div class="flex items-center gap-6 rounded-xl bg-amber-50 p-4 shadow">
-        <img src="./photo/piz3.jpg" class="h-32 w-32 rounded-xl object-cover">
-        <div>
-            <h1 class="text-2xl font-bold">
-                پیتزا سرآشپز
-            </h1>
-            <p class=" tmt-2 tex-gray-600">
-                سرآشپز درست کرده سلطان
-            </p>
-            <span class="mt-2 block font-bold text-green-700">۲۹۰,۰۰۰ تومان</span>
-        </div>
-    </div>
-        <div class="flex items-center gap-6 rounded-xl bg-amber-50 p-4 shadow">
-        <img src="./photo/piz4.jpg" class="h-32 w-32 rounded-xl object-cover">
-        <div>
-            <h1 class="text-2xl font-bold">
-                پیتزا پپرونی
-            </h1>
-            <p class=" tmt-2 tex-gray-600">
-                محبوب ترین پیتزای ما
-            </p>
-            <span class="mt-2 block font-bold text-green-700">۲۹۰,۰۰۰ تومان</span>
-        </div>
-    </div>    <div class="flex items-center gap-6 rounded-xl bg-amber-50 p-4 shadow">
-        <img src="./photo/bur2.jpg" class="h-32 w-32 rounded-xl object-cover">
-        <div>
-            <h1 class="text-2xl font-bold">
-                برگر کلاسیک همراه با فرایز
-            </h1>
-            <p class=" tmt-2 tex-gray-600">
-                محبوبترین برگر غرب مازندران
-            </p>
-            <span class="mt-2 block font-bold text-green-700">۲۹۰,۰۰۰ تومان</span>
-        </div>
-    </div>   
-    <div class="flex items-center gap-6 rounded-xl bg-amber-50 p-4 shadow">
-        <img src="./photo/bur3.webp" class="h-32 w-32 rounded-xl object-cover">
-        <div>
-            <h1 class="text-2xl font-bold">
-                برگر دستی
-            </h1>
-            <p class=" tmt-2 tex-gray-600">
-                برگر دستی گوشت سگ 100 درصد
-            </p>
-            <span class="mt-2 block font-bold text-green-700">۲۹۰,۰۰۰ تومان</span>
-        </div>
-    </div>  
-    <div class="flex items-center gap-6 rounded-xl bg-amber-50 p-4 shadow">
-        <img src="./photo/bur4.webp" class="h-32 w-32 rounded-xl object-cover">
-        <div>
-            <h1 class="text-2xl font-bold">
-                چیزبرگر مخصوص
-            </h1>
-            <p class=" tmt-2 tex-gray-600">
-                احتمال سکته زیاد
-            </p>
-            <span class="mt-2 block font-bold text-green-700">۲۹۰,۰۰۰ تومان</span>
-        </div>
-    </div>
-</div>
- </section>
- <!-- about -->
-  <section>
-    <div class="">
-        <p>
-        </p>
-    </div>
-  </section>
-</body>
+    <!-- about -->
+    <section>
+      <div class="">
+        <p></p>
+      </div>
+    </section>
+  </body>
 </html>
