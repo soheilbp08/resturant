@@ -5,15 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./styles/style.css" rel="stylesheet" />
     <link rel="stylesheet" href="./styles/tailwind-styles.css" />
-    <link rel="icon" href="./assets/logo/ChatGPT Image Jul 30, 2026, 06_08_51 PM.png" />
+    <link
+      rel="icon"
+      href="./assets/logo/ChatGPT Image Jul 30, 2026, 06_08_51 PM.png"
+    />
     <title>دولوپی</title>
   </head>
-  <body class="overflow-x-hidden bg-zinc-950">
+  <body class="bg-zinc-900 overflow-x-hidden">
+    <div
+      class="md:w-[100px] md:h-[100px] w-[35px] h-[35px] items-center rounded-full border-2 border-zinc-900 flex justify-center absolute left-5 bottom-5 z-30 bg-yellow-600"
+    >
+      <img
+        src="./assets/icons/move-down.svg"
+        alt=""
+        class="animate-bounce md:w-[40px] w-[20px]"
+      />
+    </div>
+
     <!-- متن ورود و غکس و لایه روی عکس -->
     <section class="relative h-screen">
       <img
         src="./assets/photo/d671b6b7-9aad-496c-94c5-b871fe00117b.png"
-        class="absolute inset-0 h-full w-full object-cover bg-"
+        class="img-main absolute inset-0 object-cover md:w-[100%] md:h-[100dvh] w-[100%] h-[100dvh] object-cover"
       />
       <div class="absolute inset-0 bg-black/55"></div>
       <div class="relative z-10 flex h-full items-center justify-center px-4">
@@ -26,43 +39,85 @@
     </section>
     <!-- نو بار -->
     <nav
-      class=" top-0 sticky mx-auto mt-11 flex max-w-6xl items-center justify-between rounded-3xl bg-yellow-500 px-6 py-4 shadow-lg"
+      class="top-0 sticky mx-auto md:mt-11 flex items-center justify-between rounded-3xl bg-yellow-500 md:px-6 md:py-4 shadow-lg"
     >
       <img
         src="./assets/logo/ChatGPT Image Jul 30, 2026, 06_08_51 PM.png"
         class="h-12 w-12 rounded-2xl object-center"
       />
-      <ul class="flex gap-4">
+      <!----for mobile--------------------------------------------------------------------------------------------------->
+      <ul class="">
+        <li id="menu" class="md:hidden">
+          <img src="./assets/icons/menu.svg" alt="" class="ml-4" />
+        </li>
+        <div
+          class="hidden absolute w-[200px] h-[200px] bg-amber-500 left-0 top-10 py-5" id="menu-container"
+        >
+          <ul class="flex-col flex gap-6 items-center justify-center">
+            <li class="flex items-center gap-1">
+              <!-- contac us -->
+
+              <a href="tel:09118585858" class="text-[13px]"> Contact Us </a>
+              <img src="./assets/icons/phone.svg" class="w-5 h-5 w-3 h-3" />
+            </li>
+
+            <li class="flex gap-1 items-center">
+              <a
+                href="https://maps.app.goo.gl/rBSdeD1gbUn5zdbv5"
+                class="text-[15px]"
+                >Location</a
+              >
+              <img
+                src="./assets/icons/map-pin.svg"
+                class="md:w-5 md:h-7 w-5 h-5"
+              />
+            </li>
+
+            <li class="flex gap-1">
+              <a href="#">About Us</a>
+              <img src="./assets/icons/info.svg" class="w-5 h-7" />
+            </li>
+
+            <li class="flex gap-1">
+              <a href="#"> Cart </a>
+              <img src="./assets/icons/shopping-cart.svg" class="w-5 h-7" />
+            </li>
+          </ul>
+        </div>
+      </ul>
+
+      <!----for mobile-------------------------------------------------------------------------->
+      <ul class="md:flex md:gap-6 items-center md:block hidden">
         <li class="flex items-center gap-1">
-            <!-- contac us -->
-             
-          <a href="tel:09118585858">
-           contact us
-          </a>
-          <img src="./assets/icons/phone.svg" class=" w-5 h-5"/>
+          <!-- contac us -->
+
+          <a href="tel:09118585858" class=""> Contact Us </a>
+          <img src="./assets/icons/phone.svg" class="md:w-5 md:h-5 w-3 h-3" />
+        </li>
+
+        <li class="flex gap-1 items-center">
+          <a
+            href="https://maps.app.goo.gl/rBSdeD1gbUn5zdbv5"
+            class=""
+            >Location</a
+          >
+          <img src="./assets/icons/map-pin.svg" class="md:w-5 md:h-5 w-3 h-3" />
         </li>
 
         <li class="flex gap-1">
-          <a href="https://maps.app.goo.gl/rBSdeD1gbUn5zdbv5">location</a>
-          <img src="./assets/icons/map-pin.svg"  class="w-5 h-7"/>
+          <a href="#">About Us</a>
+          <img src="./assets/icons/info.svg" class="md:w-5 md:h-5 w-3 h-3" />
         </li>
 
         <li class="flex gap-1">
-          <a href="#">about us</a>
-          <img src="./assets/icons/question.jpg" class=" w-5 h-7 "/>
-        </li>
-
-        <li class="flex gap-1">
-          <a href="#">
-        cart
-        </a>
-        <img src="./assets/icons/cart.png" class=" w-5 h-7" />
+          <a href="#"> Cart </a>
+          <img src="./assets/icons/shopping-cart.svg" class="md:w-5 md:h-5 w-3 h-3" />
         </li>
       </ul>
     </nav>
 
     <!-- غذا -->
-    <div class="menu-container p-5   flex flex-col gap-5">
+    <div class="menu-container p-5 flex flex-col gap-10">
       <div
         class="pizza-container border-4 border-yellow-600 w-[100%] flex items-center justify-between rounded p-5"
       >
@@ -70,15 +125,17 @@
           <img
             src="./assets/photo/pizza/piz1.jpg"
             alt=""
-            class="w-[100px] rounded"
+            class="md:w-[100px] w-[70px] rounded"
           />
-          <h3 class="text-white ml-80 mb-10 text-2xl">pizza menu</h3>
+          <h3 class="text-white md:ml-80 md:mb-10 md:text-2xl text-[20px] p-2">
+            Pizza Menu
+          </h3>
         </div>
 
         <a
           href="./pizza.html"
-          class="m-3 rounded px-3 py-2 hover:bg-yellow-600 transition transition-300 text-black bg-yellow-500"
-          >order</a
+          class="p-2 md:m-3 rounded md:px-3 md:py-2 hover:bg-yellow-600 transition transition-300 text-black bg-yellow-500"
+          >Order</a
         >
       </div>
 
@@ -89,68 +146,64 @@
           <img
             src="./assets/photo/berger/bur2.jpg"
             alt=""
-            class="w-[100px] h-[100px] rounded"
+            class="md:w-[100px] w-[70px] h-[70px] rounded"
           />
-          <h3 class="text-white ml-80 mb-10 text-2xl">burger menu</h3>
+          <h3 class="text-white md:ml-80 md:mb-10 md:text-2xl text-[20px] p-2">
+            Berger Menu
+          </h3>
         </div>
 
         <a
           href="./berger.html"
-          class="m-3 rounded px-3 py-2 hover:bg-yellow-600 transition transition-300 text-black bg-yellow-500"
-          >order</a
+          class="p-2 md:m-3 rounded md:px-3 md:py-2 hover:bg-yellow-600 transition transition-300 text-black bg-yellow-500"
+          >Order</a
         >
       </div>
-    <!-- </div> -->
-      <!-- chicken -->
-      v>
-      
+
+      <!---chiken-->
+
       <div
-      class="berger-container border-4 border-yellow-600 w-[100%] flex items-center justify-between rounded p-5"
+        class="berger-container border-4 border-yellow-600 w-[100%] flex items-center justify-between rounded p-5"
       >
-      <div class="flex items-center justify-between gap-5">
+        <div class="flex items-center justify-between gap-5">
           <img
-          src="./assets/photo/chicken/images.jpg"
-          alt=""
-          class="w-[100px] h-[100px] rounded"
+            src="./assets/photo/chicken/images (1).jpg"
+            alt=""
+            class="md:w-[100px] w-[70px] h-[70px] rounded"
           />
-          <h3 class="text-white ml-80 mb-10 text-2xl">chicken menu</h3>
+          <h3 class="text-white md:ml-80 md:mb-10 md:text-2xl text-[20px] p-2">
+            Chicken Menu
+          </h3>
         </div>
-        
+
         <a
-        href="./chicken.html"
-        class="m-3 rounded px-3 py-2 hover:bg-yellow-600 transition transition-300 text-black bg-yellow-500"
-        >order</a
+          href="./chicken.html"
+          class="p-2 md:m-3 rounded md:px-3 md:py-2 hover:bg-yellow-600 transition transition-300 text-black bg-yellow-500"
+          >Order</a
         >
-        </div>
-        
+      </div>
+
       <div
-      class="berger-container border-4 border-yellow-600 w-[100%] flex items-center justify-between rounded p-5"
+        class="berger-container border-4 border-yellow-600 w-[100%] flex items-center justify-between rounded p-5"
       >
-      <div class="flex items-center justify-between gap-5">
+        <div class="flex items-center justify-between gap-5">
           <img
-          src="./assets/photo/soda/images.jpg"
-          alt=""
-          class="w-[100px] h-[100px] rounded"
+            src="./assets/photo/soda/images (1).jpg"
+            alt=""
+            class="md:w-[100px] w-[70px] h-[70px] rounded"
           />
-          <h3 class="text-white ml-80 mb-10 text-2xl">soda menu</h3>
+          <h3 class="text-white md:ml-80 md:mb-10 md:text-2xl text-[20px] p-2">
+            Soda Menu
+          </h3>
         </div>
-        
+
         <a
-        href="./soda.html"
-        class="m-3 rounded px-3 py-2 hover:bg-yellow-600 transition transition-300 text-black bg-yellow-500"
-        >order</a
+          href="./soda.html"
+          class="p-2 md:m-3 rounded md:px-3 md:py-2 hover:bg-yellow-600 transition transition-300 text-black bg-yellow-500"
+          >Order</a
         >
-        </div>
+      </div>
     </div>
-    
-    
-    
-    <!-- about -->
-    <section>
-        <div class="">
-            <p></p>
-        </div>
-    </section>
-    <p class="bg-amber50 h-1000"></p>
+    <script src="./do.js"></script>
   </body>
 </html>
