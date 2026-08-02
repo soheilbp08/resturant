@@ -1,7 +1,17 @@
 const menu = document.getElementById("menu");
-const menu_container = document.getElementById("menu-container") 
-menu.addEventListener("click", function(){
-const next = this.nextElementSibling
-next.classList.toggle("hidden")
-}
-);
+const menuContainer = document.getElementById("menu-container");
+
+menu.addEventListener("click", function(e) {
+  e.stopPropagation();
+  menuContainer.classList.toggle("hidden");
+});
+
+
+menuContainer.addEventListener("click", function(e) {
+  e.stopPropagation();
+});
+
+
+document.addEventListener("click", function() {
+  menuContainer.classList.add("hidden");
+});
